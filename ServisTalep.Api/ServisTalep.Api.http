@@ -1,0 +1,6 @@
+@ServisTalep.Api_HostAddress = http://localhost:5279
+
+GET {{ServisTalep.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

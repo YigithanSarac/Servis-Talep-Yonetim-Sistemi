@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "bKVP5zOyVvU9M/ltc/5KcloGWs3yzxd7ePA3kuQ9ja0=",
+  "Source": "ServisTalep.Api",
+  "BasePath": "_content/ServisTalep.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

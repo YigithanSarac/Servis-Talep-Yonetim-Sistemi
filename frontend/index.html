@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servis Talep Yönetimi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Servis Talep Yönetim Sistemi</h1>
+
+        <div class="form-card">
+            <h2>Yeni Talep Oluştur</h2>
+
+            <input type="text" id="customerName" placeholder="Müşteri Adı">
+
+            <input type="text" id="deviceName" placeholder="Cihaz Adı">
+
+            <textarea id="description" placeholder="Arıza Açıklaması"></textarea>
+
+            <button onclick="createRequest()">Kaydet</button>
+        </div>
+
+        <div class="list-card">
+            <h2>Talep Listesi</h2>
+            <div class="filters">
+                <input type="text" id="searchInput" placeholder="Müşteri, cihaz veya açıklama ara">
+
+                <select id="statusFilter">
+                <option value="">Tüm Durumlar</option>
+                <option value="New">New</option>
+                <option value="InProgress">InProgress</option>
+                <option value="Completed">Completed</option>
+                <option value="Cancelled">Cancelled</option>
+                </select>
+
+                <button onclick="applyFilters()">Filtrele</button>
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Müşteri</th>
+                        <th>Cihaz</th>
+                        <th>Durum</th>
+                        <th>Tarih</th>
+                    </tr>
+                </thead>
+
+                <tbody id="requestTableBody">
+
+                </tbody>
+
+            </table>
+            <div class="pagination">
+                <button onclick="previousPage()">Önceki</button>
+                <span id="pageInfo">Sayfa 1</span>
+                <button onclick="nextPage()">Sonraki</button>
+</div>
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
