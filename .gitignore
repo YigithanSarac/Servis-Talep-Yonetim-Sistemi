@@ -1,0 +1,18 @@
+# Build outputs
+bin/
+obj/
+
+# Local database files
+*.db
+*.db-shm
+*.db-wal
+
+# IDE/user-specific files
+.vs/
+.vscode/
+*.user
+*.suo
+
+# OS files
+Thumbs.db
+Desktop.ini
